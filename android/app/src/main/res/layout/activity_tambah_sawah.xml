@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih_background_1"
+    tools:context=".main.TambahSawahActivity">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="171dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="100dp"
+        android:elegantTextHeight="true"
+        android:fontFamily="@font/montserrat"
+        android:text=" RENCANA MENGGARAP SAWAH ?"
+        android:textAlignment="center"
+        android:textColor="@color/hijau_tua_1"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:translationZ="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/lora"
+        android:text="Nama Sawah"
+        android:textColor="@color/hijau_tua_1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_nama_sawah"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/lora"
+        android:text="Kapan akan menanam padi ?"
+        android:textColor="@color/hijau_tua_1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_nama_sawah"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nama_sawah" />
+
+    <EditText
+        android:id="@+id/edit_nama_sawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/hijau_tua_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/edit_hari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/hijau_tua_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/simpan_sawah_baru"
+        android:layout_width="101dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/shape_green_young_btn"
+        android:fontFamily="@font/montserrat"
+        android:text="Simpan"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/edit_hari"
+        app:layout_constraintTop_toBottomOf="@+id/edit_hari" />
+
+    <Button
+        android:id="@+id/cal_btn"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/logo_calender"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_hari"
+        app:layout_constraintStart_toEndOf="@+id/edit_hari"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lora"
+        android:text="Hari/Bulan/Tahun"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/edit_hari"
+        app:layout_constraintTop_toBottomOf="@+id/edit_hari" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

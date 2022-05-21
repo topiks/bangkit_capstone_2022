@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "623160904558",
+    "project_id": "richest-6d319",
+    "storage_bucket": "richest-6d319.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623160904558:android:ca61265b5804b3d58d8f7f",
+        "android_client_info": {
+          "package_name": "com.tahufikprojects.richest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623160904558-san512ihna51pc4n9937l0vpc3hsspmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUusrZ4m5o_Xla4Sqyg2SLmGyc7CoE63U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623160904558-san512ihna51pc4n9937l0vpc3hsspmj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
