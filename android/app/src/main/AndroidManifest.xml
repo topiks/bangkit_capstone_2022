@@ -22,7 +22,10 @@
         android:theme="@style/AppTheme.noActionBar.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".PilihSawahJavaActivity"
+            android:name=".main.HalamanUtamaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.PilihSawahJavaActivity"
             android:exported="false" />
         <activity
             android:name=".main.TambahSawahActivity"

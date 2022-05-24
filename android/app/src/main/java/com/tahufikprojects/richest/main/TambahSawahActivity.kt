@@ -94,9 +94,10 @@ class TambahSawahActivity : AppCompatActivity() {
 
             override fun onDataChange(dataSnapshot: DataSnapshot)
             {
-                    mDatabaseReference.child(preferences.getValues("username").toString()).child(inputNama).child("mulai").setValue(inputTanggal)
+                    mDatabaseReference.child(preferences.getValues("username").toString()).child(inputNama).child("nama").setValue(inputNama)
+                    mDatabaseReference.child(preferences.getValues("username").toString()).child(inputNama).child("tanggalMulai").setValue(inputTanggal)
 
-                    var intent = Intent(this@TambahSawahActivity, PilihSawahActivity::class.java)
+                    var intent = Intent(this@TambahSawahActivity, PilihSawahJavaActivity::class.java)
                     startActivity(intent)
 
                     finishAffinity()

@@ -9,6 +9,7 @@ import android.widget.Toast
 import com.google.firebase.database.*
 import com.tahufikprojects.richest.R
 import com.tahufikprojects.richest.main.PilihSawahActivity
+import com.tahufikprojects.richest.main.PilihSawahJavaActivity
 import com.tahufikprojects.richest.utils.Preferences
 
 class SignInActivity : AppCompatActivity() {
@@ -33,7 +34,8 @@ class SignInActivity : AppCompatActivity() {
         {
             finishAffinity()
 
-            var goHome = Intent(this@SignInActivity, PilihSawahActivity::class.java)
+//            var goHome = Intent(this@SignInActivity, PilihSawahActivity::class.java)
+            var goHome = Intent(this@SignInActivity, PilihSawahJavaActivity::class.java)
             goHome.putExtra("USERNAME", preferences.getValues("nama"));
             startActivity(goHome)
         }
@@ -95,7 +97,8 @@ class SignInActivity : AppCompatActivity() {
 
                         Toast.makeText(this@SignInActivity, "Berhasil Masuk", Toast.LENGTH_LONG).show()
 
-                        var intent = Intent(this@SignInActivity, PilihSawahActivity::class.java)
+//                        var intent = Intent(this@SignInActivity, PilihSawahActivity::class.java)
+                        var intent = Intent(this@SignInActivity, PilihSawahJavaActivity::class.java)
                         startActivity(intent)
                         finishAffinity()
                     }

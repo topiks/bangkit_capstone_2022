@@ -5,34 +5,46 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/list_sawah"
-    android:layout_margin="5dp"
-    app:cardBackgroundColor="@color/hijau_tua_2"
-    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginLeft="25dp"
+    app:cardBackgroundColor="@color/hijau_muda_2"
     app:cardElevation="3dp"
-    app:contentPadding="4dp"
+    app:cardCornerRadius="10dp"
+
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/relativeLayoutListSawah"
-        android:layout_width="match_parent"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:paddingTop="10dp">
 
         <TextView
-            android:id="@+id/nama_sawah"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
+            android:id="@+id/text_mulai_2"
+            android:layout_width="81dp"
+            android:layout_height="24dp"
+            android:fontFamily="@font/montserrat"
+            android:text="TextView"
+            android:textStyle="bold|italic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/text_mulai"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
+        <Button
+            android:id="@+id/btn_list_sawah"
+            android:layout_width="369dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_abu_btn"
+            android:fontFamily="@font/montserrat"
+            android:text="defaultText"
+            android:textAllCaps="false"
+            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nama_sawah" />
+            app:layout_constraintTop_toBottomOf="@+id/text_mulai_2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
