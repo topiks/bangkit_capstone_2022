@@ -2,10 +2,12 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'com.google.gms.google-services'
+    id 'kotlin-android-extensions'
 }
 
 android {
     compileSdk 32
+    ndkVersion "21.3.6528147"
 
     defaultConfig {
         applicationId "com.tahufikprojects.richest"
@@ -33,10 +35,14 @@ android {
     buildFeatures {
         viewBinding true
     }
+    aaptOptions{
+        noCompress "tflite"
+        noCompress "lite"
+    }
 }
 
 dependencies {
-
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.6.0'
@@ -50,4 +56,13 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.firebaseui:firebase-ui-database:7.1.1'
     implementation 'com.google.android.material:material:1.6.0'
+
+    implementation 'org.tensorflow:tensorflow-lite:2.5.0'
+//    implementation 'org.tensorflow:tensorflow-lite-gpu:2.5.0'
+//    implementation 'org.tensorflow:tensorflow-lite-support:2.5.0'
+
+    // Tensorflow lite dependencies
+//    implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly-SNAPSHOT'
+//    implementation 'org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly-SNAPSHOT'
+//    implementation 'org.tensorflow:tensorflow-lite-support:0.0.0-nightly-SNAPSHOT'
 }

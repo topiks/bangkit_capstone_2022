@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_scan"
+        android:id="@+id/menuju_btn_scan"
         android:layout_width="371dp"
         android:layout_height="49dp"
         android:layout_marginStart="20dp"
