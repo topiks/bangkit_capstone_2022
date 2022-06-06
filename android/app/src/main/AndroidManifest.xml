@@ -9,9 +9,7 @@
 
     <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-<!--    <uses-permission android:name="android.permission.CAMERA" />-->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -25,18 +23,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.noActionBar.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".scan.HasilActivity"
+            android:exported="false" />
 
         <provider
-            android:authorities="com.tahufikprojects.richest.fileprovider"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="com.tahufikprojects.richest.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
-
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"/>
-
-            </provider>
+                android:resource="@xml/file_paths" />
+        </provider>
 
         <activity
             android:name=".scan.CaptureActivity"
@@ -66,8 +65,7 @@
             android:exported="false" />
         <activity
             android:name=".opening.OnBoardingActivity"
-            android:exported="false" />
-        <!-- <activity -->
+            android:exported="false" /> <!-- <activity -->
         <!-- android:name=".opening.SplashActivity" -->
         <!-- android:exported="false" /> -->
         <activity

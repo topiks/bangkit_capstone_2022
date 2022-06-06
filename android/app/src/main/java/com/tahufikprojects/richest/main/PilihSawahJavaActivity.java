@@ -103,6 +103,7 @@ public class PilihSawahJavaActivity extends AppCompatActivity{
                                 preferences.setValues("nama", "");
                                 preferences.setValues("email", "");
                                 preferences.setValues("username", "");
+                                preferences.setValues("nama_sawah_sekarang", "");
 
                                 finishAffinity();
                                 return true;

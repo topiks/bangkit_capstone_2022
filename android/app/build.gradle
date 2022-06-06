@@ -33,6 +33,7 @@ android {
         jvmTarget = '1.8'
     }
     buildFeatures {
+        mlModelBinding true
         viewBinding true
     }
     aaptOptions{
@@ -57,7 +58,7 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-database:7.1.1'
     implementation 'com.google.android.material:material:1.6.0'
 
-    implementation 'org.tensorflow:tensorflow-lite:2.5.0'
+//    implementation 'org.tensorflow:tensorflow-lite:2.5.0'
 //    implementation 'org.tensorflow:tensorflow-lite-gpu:2.5.0'
 //    implementation 'org.tensorflow:tensorflow-lite-support:2.5.0'
 
@@ -65,4 +66,7 @@ dependencies {
 //    implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly-SNAPSHOT'
 //    implementation 'org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly-SNAPSHOT'
 //    implementation 'org.tensorflow:tensorflow-lite-support:0.0.0-nightly-SNAPSHOT'
+
+    implementation 'org.tensorflow:tensorflow-lite-support:0.1.0'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0'
 }
