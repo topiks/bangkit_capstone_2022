@@ -24,6 +24,12 @@
         android:theme="@style/AppTheme.noActionBar.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".main.PilihSawahV2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".main.ReportActivity"
+            android:exported="false" />
+        <activity
             android:name=".scan.HasilActivity"
             android:exported="false" />
 
@@ -42,9 +48,6 @@
             android:exported="false" />
         <activity
             android:name=".main.HalamanUtamaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".main.PilihSawahJavaActivity"
             android:exported="false" />
         <activity
             android:name=".main.TambahSawahActivity"

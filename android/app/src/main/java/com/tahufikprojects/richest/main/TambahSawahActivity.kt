@@ -97,7 +97,7 @@ class TambahSawahActivity : AppCompatActivity() {
                     mDatabaseReference.child(preferences.getValues("username").toString()).child(inputNama).child("nama").setValue(inputNama)
                     mDatabaseReference.child(preferences.getValues("username").toString()).child(inputNama).child("tanggalMulai").setValue(inputTanggal)
 
-                    var intent = Intent(this@TambahSawahActivity, PilihSawahJavaActivity::class.java)
+                    var intent = Intent(this@TambahSawahActivity, PilihSawahV2Activity::class.java)
                     startActivity(intent)
 
                     finishAffinity()

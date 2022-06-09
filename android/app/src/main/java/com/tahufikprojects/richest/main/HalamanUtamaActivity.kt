@@ -10,6 +10,7 @@ import com.tahufikprojects.richest.R
 import com.tahufikprojects.richest.account.SignUpActivity
 import com.tahufikprojects.richest.scan.CaptureActivity
 import com.tahufikprojects.richest.utils.Preferences
+import kotlinx.android.synthetic.main.activity_halaman_utama.*
 
 class HalamanUtamaActivity : AppCompatActivity() {
 
@@ -27,6 +28,11 @@ class HalamanUtamaActivity : AppCompatActivity() {
         var btn_scan = findViewById(R.id.menuju_btn_scan) as Button
         btn_scan.setOnClickListener {
             var intent = Intent(this@HalamanUtamaActivity, CaptureActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_report.setOnClickListener {
+            var intent = Intent(this@HalamanUtamaActivity, ReportActivity::class.java)
             startActivity(intent)
         }
     }

@@ -1,40 +1,21 @@
 package com.tahufikprojects.richest.scan
 
-import android.Manifest
-import android.Manifest.permission.READ_EXTERNAL_STORAGE
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.graphics.Bitmap
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
-import android.util.Log
-import android.widget.Button
-import android.widget.ImageView
-import androidx.core.app.ActivityCompat
 import kotlinx.android.synthetic.main.activity_capture.*
-import java.util.*
-import android.Manifest.permission.READ_EXTERNAL_STORAGE
 import android.app.Activity
-import android.content.ContentValues
 import android.graphics.BitmapFactory
-import android.graphics.drawable.BitmapDrawable
 import android.os.Environment
 import android.view.View
 import android.widget.Toast
 import androidx.core.content.FileProvider
 import com.tahufikprojects.richest.R
-import com.tahufikprojects.richest.main.PilihSawahJavaActivity
-import com.tahufikprojects.richest.ml.Richest
 import com.tahufikprojects.richest.utils.Classifier
-import com.tahufikprojects.richest.utils.ClassifiyV2
-import kotlinx.android.synthetic.main.activity_pilih_sawah_java.*
-import org.tensorflow.lite.DataType
-import org.tensorflow.lite.support.image.TensorImage
-import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
+import com.tahufikprojects.richest.utils.ClassifyV3
 import java.io.File
-import java.io.IOException
 
 private const val REQUEST_CODE = 42
 private lateinit var photoFile: File
@@ -51,7 +32,7 @@ class CaptureActivity : AppCompatActivity() {
     private val mLabelPath = "label.txt"
 
     private lateinit var classifier: Classifier
-    private lateinit var myClass: ClassifiyV2
+    private lateinit var myClass: ClassifyV3
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -114,7 +95,7 @@ class CaptureActivity : AppCompatActivity() {
 
     private fun initClassifier() {
         classifier = Classifier(assets, mModelPath, mLabelPath, mInputSize)
-        myClass = ClassifiyV2(this)
+        myClass = ClassifyV3(this)
     }
 
 }

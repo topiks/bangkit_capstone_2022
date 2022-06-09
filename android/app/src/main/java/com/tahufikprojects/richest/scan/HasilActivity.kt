@@ -31,13 +31,13 @@ var penyebabTungro = "Rice tungro bacilliform virus (RTBV) dan Rice tungro spher
 var akibatBacterialLeafBlight = "Pertumbuhan tanaman terhambat, butir-butir padi kurang beras, kualitas biji rendah, persentase beras pecah tinggi"
 var akibatLeafStreak = "Akibat infeksi bakteri daun bergaris, seluruh pertanaman menjadi berwarna oranye kekuning-kuningan"
 var akibatPanicleBlight = "Bulir yang terinfeksi dapat tersebar secara tidak merata di malai. Batang di bawah malai yang terinfeksi tetap berwarna hijau. Bakteri menginfeksi bulir-bulir yang sedang berkembang pada tahap berbunga dan menyebabkan kegagalan atau pembusukan selama pengisian bulir setelah penyerbukan"
-var akibatBlast = "Pada daun terdapat becak coklat berbentuk belah ketupat dan memanjang searah dengan urat daun\n" +
-        "Pinggir becak berwarna coklat dengan bagian tengah berwarna putih keabuan\n" +
-        "Becak-becak terutama terlihat pada stadium pertumbuhan vegetative\n" +
-        "Becak-becak dapat bergabung menjadi satu, sehingga secara keseluruhan tampak tanaman seperti terbakar\n" +
-        "Serangan terjadi pada tanaman yang telah keluar malainya\n" +
-        "Buku-buku yang terserang berwarna cokelat kehitaman dan busuk, sehingga mudah patah bila terhembus angin\n" +
-        "Malai menjadi mengkerut, butir tidak terisi penuh, dan kadang-kadang menjadi hampa"
+var akibatBlast = "1. Pada daun terdapat becak coklat berbentuk belah ketupat dan memanjang searah dengan urat daun\n" +
+        "2. Pinggir becak berwarna coklat dengan bagian tengah berwarna putih keabuan\n" +
+        "3. Becak-becak terutama terlihat pada stadium pertumbuhan vegetative\n" +
+        "4. Becak-becak dapat bergabung menjadi satu, sehingga secara keseluruhan tampak tanaman seperti terbakar\n" +
+        "5. Serangan terjadi pada tanaman yang telah keluar malainya\n" +
+        "6. Buku-buku yang terserang berwarna cokelat kehitaman dan busuk, sehingga mudah patah bila terhembus angin\n" +
+        "7. Malai menjadi mengkerut, butir tidak terisi penuh, dan kadang-kadang menjadi hampa"
 var akibatBrownSpot = "Pada daun terdapat bercak-bercak sempit memanjang, berwarna coklat kemerahan, sejajar dengan ibu tulang daun. Banyaknya bercak makin meningkat pada waktu tanaman membentuk anakan. Pada serangan yang berat bercak-bercak terdapat pada upih daun, batang, dan bunga. Dilaporkan penyakit ini dapat menyebabkan kehilangan hasil sampai 90%"
 var akibatDeadHart = "Pucuk batang padi menjadi kering kekuningan serta mudah dicabut dan bulir padi menjadi hampa akibat proses pengisian bijinya tidak berjalan sempurna karena kerusakan pada pembuluh batang padi"
 var akibatDownyMildew = "Gejala  serangan terlihat pada permukaan daun terdapat garis-garis sejajar tulang daun berwarna putih sampai kuning diikuti dengan garis-garis khlorotik sampai coklat bila infeksi makin lanjut. Tanaman terlihat kerdil dan tidak berproduksi, tetapi bila masih sempat berproduksi, ini merupakan hasil infeksi yang terlambat dan biji jagung yang dihasilkan sudah terinfeksi patogen."
@@ -45,48 +45,48 @@ var akibatHispa = "Daun yang terserang mengering, dan menghadirkan tampilan puti
 var akibatNormal = ""
 var akibatTungro = "Gejala utama penyakit tungro terlihat pada perubahan warna daun terutama pada daun muda berwarna kuning oranye dimulai dari ujung daun. Daun muda agak menggulung, jumlah anakan berkurang, tanaman kerdil dan pertumbuhan terhambat"
 
-var solusiBacterialLeafBlight = "Penggunaan varietas tahan seperti Conde dan Angke adalah cara yang paling efektif.\n" +
-        "Sanitasi seperti membersihkan tunggul-tunggul dan jerami-jerami yang terinfeksi/sakit.\n" +
-        "Jika menggunakan kompos jerami, pastikan jerami dari tanaman sakit sudah terdekomposisi sempurna sebelum tanam pindah.\n" +
-        "Gunakan benih atau bibit yang bebas dari penyakit hawar daun bakteri.\n" +
-        "Gunakan pupuk nitrogen sesuai takaran anjuran.\n" +
-        "Jarak tanam jangan terlalu rapat."
-var solusiLeafStreak = "Buang atau hancurkan tunggul-tunggul dan jerami-jerami yang terinfeksi/sakit\n" +
-        "Pastikan jerami dari tanaman sakit sudah terdekomposisi sempurna sebelum tanam pindah.\n" +
-        "Gunakan benih atau bibit yang bebas dari penyakit bakteri daun bergaris\n" +
-        "Gunakan pupuk nitrogen sesuai anjuran\n" +
-        "Atur jarak tanam tidak terlalu rapat\n" +
-        "Berakan tanah sesudah panen"
-var solusiPanicleBlight = "Pastikan benih sesuai dengan standar kualitas yang dipersyaratkan\n" +
-        "Pantau tanaman secara teratur dan periksa tanaman yang sakit \n" +
-        "Lakukan penanaman lebih awal pada musim semi\n" +
-        "Kendalikan program pemupukan dan jangan melebihi dosis yang disarankan\n"
-var solusiBlast = "Penanaman benih sehat\n" +
-        "Perendaman (Soaking) benih \n" +
-        "Penanaman padi pada awal musim penghujan\n" +
-        "Perlakuan benih (seed treatment) dengan fungisida sistemik seperti Pyroquilone 50 WP  sebanyak 8 g/kg \n"
-var solusiBrownSpot = "Budidaya tanaman sehat, penggunaan benih bermutu, perbaikan sarana tata air, pemupukan berimbang, tanam serempak, dan pengaturan waktu tanam yang tepat. Penyakit ini tidak menimbulkan kerugian yang berarti pada pertanaman yang diusahakan dengan cara agronomi yang baik\n" +
-        "Sanitasi dan pergiliran tanaman. Sifat pathogen dapat bertahan di dalam jerami dan tanah, maka sebaiknya dilakukan sanitasi (jerami diangkat keluar untuk berbagai keperluan lain). Selanjutnya dilakukan pergiliran tanaman dengan tanaman bukan inang penyakit untuk mematikan pathogen didalam tanah.\n" +
-        "Perlakuan biji, dilakukan dengan merendam dalam air panas (hot water treatment) dicampur dengan fungisida. Fungisida yang biasa digunakan adalah tiram, oksiklorida tembaga, atau dapat juga menggunakan formalin.\n" +
-        "Menanam varietas yang tahan atau toleran. Cara ini merupakan upaya pengendalian yang efektif dan efisien. Serta mudah dikombinasikan dengan taktik pengendaian yang lain.\n" +
-        "Alternatif pengendalian terakhir dengan menggunakan fungisida berbahan aktif antara lain: tebukonazol, heksakonazol, belerang, tebukonazo + triflosistrobin, azoksistrobin + difenokonazol. Propikonazol + prokloraz, difenokonazol + Propikonazol, tembaga, tiodozal, metribuzin, mankozab, fenbukonazol, asam khloro bromo iso sianurit, propineb flupikolid, ziram."
-var solusiDeadHart = " Melakukan penanaman secara serentak dalam areal penanaman yang luas agar tanaman padi berada pada fase yang sama sehingga perkembangan serta penyebaran sumber hama di lapangan dapat ditekan\n" +
-        "Pergiliran tanaman dengan tanaman bukan padi sehingga dapat memutus siklus hidup hama \n" +
-        "Pemanfaatan musuh alami baik parasitoid, predator, maupun pathogen\n" +
-        "Menggunakan aplikasi insektisida sistemik saat tanaman padi berumur 2-3 minggu\n"
-var solusiDownyMildew = "Tanam varietas padi yang tahan bulai\n" +
-        "Tidak menanam benih padi yang berasal dari tanaman sakit.\n" +
-        "Tanam padi secara serempak pada awal sampai akhir musim kemarau. Penanaman padi pada peralihan musim (marengan atau labuhan) akan menderita kerugian besar karena bulai).\n" +
-        "Perlakukan benih dengan fungisida sistemik seperti Ridomil 35 SD ,(5 g formulasi/kg benih Ridomil mengandung bahan aktif metalaksil 35%)."
-var solusiHispa = "Gunakan jarak tanam yang lebih rapat dengan kerapatan daun yang lebih besar yang dapat mentoleransi jumlah hispa yang lebih banyak. \n" +
-        "Tanam tanaman di awal musim untuk menghindari populasi puncak.  \n" +
-        "Potong ujung pucuk untuk mencegah serangga bertelur. \n" +
-        "Kumpulkan serangga dewasa dengan jaring penyapu, terutama di pagi hari ketika mereka kurang banyak bergerak. \n"
+var solusiBacterialLeafBlight = "1. Penggunaan varietas tahan seperti Conde dan Angke adalah cara yang paling efektif.\n" +
+        "2. Sanitasi seperti membersihkan tunggul-tunggul dan jerami-jerami yang terinfeksi/sakit.\n" +
+        "3. Jika menggunakan kompos jerami, pastikan jerami dari tanaman sakit sudah terdekomposisi sempurna sebelum tanam pindah.\n" +
+        "4. Gunakan benih atau bibit yang bebas dari penyakit hawar daun bakteri.\n" +
+        "5. Gunakan pupuk nitrogen sesuai takaran anjuran.\n" +
+        "6. Jarak tanam jangan terlalu rapat."
+var solusiLeafStreak = "1. Buang atau hancurkan tunggul-tunggul dan jerami-jerami yang terinfeksi/sakit\n" +
+        "2. Pastikan jerami dari tanaman sakit sudah terdekomposisi sempurna sebelum tanam pindah.\n" +
+        "3. Gunakan benih atau bibit yang bebas dari penyakit bakteri daun bergaris\n" +
+        "4. Gunakan pupuk nitrogen sesuai anjuran\n" +
+        "5. Atur jarak tanam tidak terlalu rapat\n" +
+        "6. Berakan tanah sesudah panen"
+var solusiPanicleBlight = "1. Pastikan benih sesuai dengan standar kualitas yang dipersyaratkan\n" +
+        "2. Pantau tanaman secara teratur dan periksa tanaman yang sakit \n" +
+        "3. Lakukan penanaman lebih awal pada musim semi\n" +
+        "4. Kendalikan program pemupukan dan jangan melebihi dosis yang disarankan\n"
+var solusiBlast = "1. Penanaman benih sehat\n" +
+        "2. Perendaman (Soaking) benih \n" +
+        "3. Penanaman padi pada awal musim penghujan\n" +
+        "4. Perlakuan benih (seed treatment) dengan fungisida sistemik seperti Pyroquilone 50 WP  sebanyak 8 g/kg \n"
+var solusiBrownSpot = "1. Budidaya tanaman sehat, penggunaan benih bermutu, perbaikan sarana tata air, pemupukan berimbang, tanam serempak, dan pengaturan waktu tanam yang tepat. Penyakit ini tidak menimbulkan kerugian yang berarti pada pertanaman yang diusahakan dengan cara agronomi yang baik\n" +
+        "2. Sanitasi dan pergiliran tanaman. Sifat pathogen dapat bertahan di dalam jerami dan tanah, maka sebaiknya dilakukan sanitasi (jerami diangkat keluar untuk berbagai keperluan lain). Selanjutnya dilakukan pergiliran tanaman dengan tanaman bukan inang penyakit untuk mematikan pathogen didalam tanah.\n" +
+        "3. Perlakuan biji, dilakukan dengan merendam dalam air panas (hot water treatment) dicampur dengan fungisida. Fungisida yang biasa digunakan adalah tiram, oksiklorida tembaga, atau dapat juga menggunakan formalin.\n" +
+        "4. Menanam varietas yang tahan atau toleran. Cara ini merupakan upaya pengendalian yang efektif dan efisien. Serta mudah dikombinasikan dengan taktik pengendaian yang lain.\n" +
+        "5. Alternatif pengendalian terakhir dengan menggunakan fungisida berbahan aktif antara lain: tebukonazol, heksakonazol, belerang, tebukonazo + triflosistrobin, azoksistrobin + difenokonazol. Propikonazol + prokloraz, difenokonazol + Propikonazol, tembaga, tiodozal, metribuzin, mankozab, fenbukonazol, asam khloro bromo iso sianurit, propineb flupikolid, ziram."
+var solusiDeadHart = "1. Melakukan penanaman secara serentak dalam areal penanaman yang luas agar tanaman padi berada pada fase yang sama sehingga perkembangan serta penyebaran sumber hama di lapangan dapat ditekan\n" +
+        "2. Pergiliran tanaman dengan tanaman bukan padi sehingga dapat memutus siklus hidup hama \n" +
+        "3. Pemanfaatan musuh alami baik parasitoid, predator, maupun pathogen\n" +
+        "4. Menggunakan aplikasi insektisida sistemik saat tanaman padi berumur 2-3 minggu\n"
+var solusiDownyMildew = "1. Tanam varietas padi yang tahan bulai\n" +
+        "2. Tidak menanam benih padi yang berasal dari tanaman sakit.\n" +
+        "3. Tanam padi secara serempak pada awal sampai akhir musim kemarau. Penanaman padi pada peralihan musim (marengan atau labuhan) akan menderita kerugian besar karena bulai).\n" +
+        "4. Perlakukan benih dengan fungisida sistemik seperti Ridomil 35 SD ,(5 g formulasi/kg benih Ridomil mengandung bahan aktif metalaksil 35%)."
+var solusiHispa = "1. Gunakan jarak tanam yang lebih rapat dengan kerapatan daun yang lebih besar yang dapat mentoleransi jumlah hispa yang lebih banyak. \n" +
+        "2. Tanam tanaman di awal musim untuk menghindari populasi puncak.  \n" +
+        "3. Potong ujung pucuk untuk mencegah serangga bertelur. \n" +
+        "4. Kumpulkan serangga dewasa dengan jaring penyapu, terutama di pagi hari ketika mereka kurang banyak bergerak. \n"
 var solusiNormal = ""
-var solusiTungro = "Tanam serempak\n" +
-        "Mengatur waktu tanam yang tepat \n" +
-        "Tanam jajar legowo\n" +
-        "Penyemprotan insktisida\n"
+var solusiTungro = "1. Tanam serempak\n" +
+        "2. Mengatur waktu tanam yang tepat \n" +
+        "3. Tanam jajar legowo\n" +
+        "4. Penyemprotan insktisida\n"
 
 class HasilActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

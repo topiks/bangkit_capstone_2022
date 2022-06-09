@@ -7,8 +7,7 @@ import android.widget.Button
 import com.tahufikprojects.richest.R
 import com.tahufikprojects.richest.account.SignInActivity
 import com.tahufikprojects.richest.account.SignUpActivity
-import com.tahufikprojects.richest.main.PilihSawahActivity
-import com.tahufikprojects.richest.main.PilihSawahJavaActivity
+import com.tahufikprojects.richest.main.PilihSawahV2Activity
 import com.tahufikprojects.richest.utils.Preferences
 
 class OnBoardingActivity : AppCompatActivity() {
@@ -24,7 +23,8 @@ class OnBoardingActivity : AppCompatActivity() {
             finishAffinity()
 
 //            var goHome = Intent(this@OnBoardingActivity, PilihSawahActivity::class.java)
-            var goHome = Intent(this@OnBoardingActivity, PilihSawahJavaActivity::class.java)
+//            var goHome = Intent(this@OnBoardingActivity, PilihSawahJavaActivity::class.java)
+            var goHome = Intent(this@OnBoardingActivity, PilihSawahV2Activity::class.java)
             startActivity(goHome)
         }
 
