@@ -35,6 +35,11 @@ class HalamanUtamaActivity : AppCompatActivity() {
             var intent = Intent(this@HalamanUtamaActivity, ReportActivity::class.java)
             startActivity(intent)
         }
+        
+        btn_list.setOnClickListener {
+            var intent = Intent(this@HalamanUtamaActivity, list_page::class.java)
+            startActivity(intent)
+        }
     }
     
     fun asSyncAdapter(uri: Uri, account: String, accountType: String): Uri {
