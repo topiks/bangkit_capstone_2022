@@ -1,0 +1,304 @@
+<resources>
+    <string name="app_name">Richest</string>
+    <string name="title_activity_pilih_sawah">PilihSawahActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="day_x">Hari ke-</string>
+    <string name="description">Deskripsi</string>
+    <string-array name="data_day">
+        <item>Hari Pertama</item>
+        <item>Hari Ke-2</item>
+        <item>Hari Ke-3</item>
+        <item>Hari Ke-4</item>
+        <item>Hari Ke-5</item>
+        <item>Hari Ke-6</item>
+        <item>Hari Ke-7</item>
+        <item>Hari Ke-8</item>
+        <item>Hari Ke-9</item>
+        <item>Hari Ke-10</item>
+        <item>Hari Ke-11</item>
+        <item>Hari Ke-12</item>
+        <item>Hari Ke-13</item>
+        <item>Hari Ke-14</item>
+        <item>Hari Ke-15</item>
+        <item>Hari Ke-16</item>
+        <item>Hari Ke-17</item>
+        <item>Hari Ke-18</item>
+        <item>Hari Hari Ke-19</item>
+        <item>Hari Ke-20</item>
+        <item>Hari Ke-21</item>
+        <item>Hari Ke-22</item>
+        <item>Hari Ke-23</item>
+        <item>Hari Ke-24</item>
+        <item>Hari Ke-25</item>
+        <item>Hari Ke-26</item>
+        <item>Hari Ke-27</item>
+        <item>Hari Ke-28</item>
+        <item>Hari Ke-29</item>
+        <item>Hari Ke-30</item>
+        <item>Hari Ke-31</item>
+        <item>Hari Ke-32</item>
+        <item>Hari Ke-33</item>
+        <item>Hari Ke-34</item>
+        <item>Hari Ke-35</item>
+        <item>Hari Ke-36</item>
+        <item>Hari Ke-37</item>
+        <item>Hari Ke-38</item>
+        <item>Hari Ke-39</item>
+        <item>Hari Ke-40</item>
+        <item>Hari Ke-41</item>
+        <item>Hari Ke-42</item>
+        <item>Hari Ke-43</item>
+        <item>Hari Ke-44</item>
+        <item>Hari Ke-45</item>
+        <item>Hari Ke-46</item>
+        <item>Hari Ke-47</item>
+        <item>Hari Ke-48</item>
+        <item>Hari Ke-49</item>
+        <item>Hari Ke-50</item>
+        <item>Hari Ke-51</item>
+        <item>Hari Ke-52</item>
+        <item>Hari Ke-53</item>
+        <item>Hari Ke-54</item>
+        <item>Hari Ke-55</item>
+        <item>Hari Ke-56</item>
+        <item>Hari Ke-57</item>
+        <item>Hari Ke-58</item>
+        <item>Hari Ke-59</item>
+        <item>Hari Ke-60</item>
+        <item>Hari Ke-61</item>
+        <item>Hari Ke-62</item>
+        <item>Hari Ke-63</item>
+        <item>Hari Ke-64</item>
+        <item>Hari Ke-65</item>
+        <item>Hari Ke-66</item>
+        <item>Hari Ke-67</item>
+        <item>Hari Ke-68</item>
+        <item>Hari Ke-69</item>
+        <item>Hari Ke-70</item>
+        <item>Hari Ke-71</item>
+        <item>Hari Ke-72</item>
+        <item>Hari Ke-73</item>
+        <item>Hari Ke-74</item>
+        <item>Hari Ke-75</item>
+        <item>Hari Ke-76</item>
+        <item>Hari Ke-77</item>
+        <item>Hari Ke-78</item>
+        <item>Hari Ke-79</item>
+        <item>Hari Ke-80</item>
+        <item>Hari Ke-81</item>
+        <item>Hari Ke-82</item>
+        <item>Hari Ke-83</item>
+        <item>Hari Ke-84</item>
+        <item>Hari Ke-85</item>
+        <item>Hari Ke-86</item>
+        <item>Hari Ke-87</item>
+        <item>Hari Ke-88</item>
+        <item>Hari Ke-89</item>
+        <item>Hari Ke-90</item>
+    </string-array>
+    <string-array name="data_description">
+        <item>Menanap padi yang sudah disemai</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Pengurangan air sawah</item>
+        <item>Pemberian Pupuk PHOSKA SP36/SAM-ZEO UREA</item>
+
+        <item>Penambahan air sawah 5 cm</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Penyemprotan tahap 1 (Belt dan Antracool)</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Penanggulangan gulma atau pembersihan rumput</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+
+        <item>Penambahan air sawah 10 cm</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Penanggulangan gulma atau pembersihan rumput</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Penyemrotan tahap 2 (Belt dan antracool)</item>
+
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Penanggulangan gulma atau pembersihan rumput</item>
+        <item>Pemupukan tahap 2 (saprodap phoska sp36 za)</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Penyemprotan tahap 3 (folicur)</item>
+
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Penyemprotan tahap 4 (belt dan nativo)</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Penanggulangan gulma atau pembersihan rumput</item>
+        <item>Mengecek keadaan sawah</item>
+
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Penambahan air sawah 15 cm</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+
+        <item>Penyemprotan terakhir (folicur dan nativo)</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Penanggulangan gulma atau pembersihan rumput</item>
+        <item>Mengecek keadaan sawah</item>
+
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Pembersihan dan panggulangan gulma</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Mengecek keadaan sawah</item>
+        <item>Siap panen</item>
+    </string-array>
+    <integer-array name="data_photo">
+        <item>@drawable/satu</item>
+        <item>@drawable/dua</item>
+        <item>@drawable/tiga</item>
+        <item>@drawable/empat</item>
+        <item>@drawable/lima</item>
+        <item>@drawable/enam</item>
+        <item>@drawable/tujuh</item>
+        <item>@drawable/delapan</item>
+        <item>@drawable/sembilan</item>
+        <item>@drawable/sepuluh</item>
+        <item>@drawable/sebelas</item>
+        <item>@drawable/duabelas</item>
+        <item>@drawable/tigabelas</item>
+        <item>@drawable/emapatbelas</item>
+        <item>@drawable/limabelas</item>
+        <item>@drawable/enambelas</item>
+        <item>@drawable/tujuhbelas</item>
+        <item>@drawable/delapanbelas</item>
+        <item>@drawable/sembilanbelas</item>
+        <item>@drawable/duapuluh</item>
+        <item>@drawable/duasatu</item>
+        <item>@drawable/duadua</item>
+        <item>@drawable/duatiga</item>
+        <item>@drawable/duaempat</item>
+        <item>@drawable/dualima</item>
+        <item>@drawable/duaenam</item>
+        <item>@drawable/duatujuh</item>
+        <item>@drawable/duadelapan</item>
+        <item>@drawable/duasembilan</item>
+        <item>@drawable/tigapuluh</item>
+        <item>@drawable/tigassatu</item>
+        <item>@drawable/tigadua</item>
+        <item>@drawable/tigatiga</item>
+        <item>@drawable/tigaempat</item>
+        <item>@drawable/tigalima</item>
+        <item>@drawable/tigaenam</item>
+        <item>@drawable/tigatujuh</item>
+        <item>@drawable/tigadelapan</item>
+        <item>@drawable/tigasembilan</item>
+        <item>@drawable/empatpuluh</item>
+        <item>@drawable/empatsatu</item>
+        <item>@drawable/empatdua</item>
+        <item>@drawable/empattiga</item>
+        <item>@drawable/empatempat</item>
+        <item>@drawable/empatlima</item>
+        <item>@drawable/emaptenam</item>
+        <item>@drawable/empattujuh</item>
+        <item>@drawable/empatdelapan</item>
+        <item>@drawable/empatsembilan</item>
+        <item>@drawable/limapuluh</item>
+        <item>@drawable/limasatu</item>
+        <item>@drawable/limadua</item>
+        <item>@drawable/limatiga</item>
+        <item>@drawable/limaempat</item>
+        <item>@drawable/limalima</item>
+        <item>@drawable/limaenam</item>
+        <item>@drawable/limatujuh</item>
+        <item>@drawable/limadelapan</item>
+        <item>@drawable/limasembilan</item>
+        <item>@drawable/enampuluh</item>
+        <item>@drawable/enamsatu</item>
+        <item>@drawable/enamdua</item>
+        <item>@drawable/enamtiga</item>
+        <item>@drawable/enamempat</item>
+        <item>@drawable/enamlima</item>
+        <item>@drawable/enamenam</item>
+        <item>@drawable/enamtujuh</item>
+        <item>@drawable/enamdelapan</item>
+        <item>@drawable/enamsembilan</item>
+        <item>@drawable/tujuhpuluh</item>
+        <item>@drawable/tujuhsatu</item>
+        <item>@drawable/tujuhdua</item>
+        <item>@drawable/tujuhtiga</item>
+        <item>@drawable/tujuhempat</item>
+        <item>@drawable/tujuhlima</item>
+        <item>@drawable/tujuhenam</item>
+        <item>@drawable/tujuhtujuh</item>
+        <item>@drawable/tujuhdelapan</item>
+        <item>@drawable/tujuhsembilan</item>
+        <item>@drawable/delapanpuluh</item>
+        <item>@drawable/delapansatu</item>
+        <item>@drawable/delapandua</item>
+        <item>@drawable/delapantiga</item>
+        <item>@drawable/delapanempat</item>
+        <item>@drawable/delapanlima</item>
+        <item>@drawable/delapanenam</item>
+        <item>@drawable/delapantujuh</item>
+        <item>@drawable/delapandelapan</item>
+        <item>@drawable/delapansembilan</item>
+        <item>@drawable/sembilan_puluh</item>
+    </integer-array>
+
+</resources>
