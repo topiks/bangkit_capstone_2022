@@ -1,0 +1,10 @@
+@tensorflow/tfjs-node
+body-parser
+canvas
+cors
+express
+jimp
+morgan
+multer
+nanoid
+nodemon
