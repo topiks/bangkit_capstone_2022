@@ -7,7 +7,7 @@ There are 4 branch,
 - md, for mobile dev's progress repo
 - cc, for cloud computing's progress repo
 
-## There are several ways to use our app
+## There are several ways to use Richest app
 
 ## 1. Download Bundle APK
 
