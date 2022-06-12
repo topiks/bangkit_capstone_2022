@@ -1,9 +1,10 @@
 const path = require("path");
-const { readFileUtil, writeFileUtil } = require("../utils/dataWrite");
+const { readImageUtil, writeImageUtil } = require("../function/dataWrite");
 const uploadFile = path.join(__dirname,"..","database","filedata.json")
-const readFileData = () => {
+
+const readImageData = () => {
     try {
-        const parsedJson = readFileUtil(uploadFile);
+        const parsedJson = readImageUtil(uploadFile);
         return parsedJson;
 
     } catch (err) {
@@ -12,9 +13,9 @@ const readFileData = () => {
     }
 };
 
-const writeFileData = (arr) => {
+const writeImageData = (arr) => {
     try {
-        writeFileUtil(arr, uploadFile);
+        writeImageUtil(arr, uploadFile);
         return;
     } catch (err){
         console.log(err);
@@ -22,4 +23,4 @@ const writeFileData = (arr) => {
     }
 };
 
-module.exports = { writeFileData , readFileData };
+module.exports = { writeImageData , readImageData };

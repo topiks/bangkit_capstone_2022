@@ -8,15 +8,14 @@ const path = require("path");
 const {
     getUploadHandler,
     addImgUploadHandler,
-    deleteImgUploadHandler,
-} = require("../handler/upload");
+} = require("../handlerImg/uploadHandler");
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) =>{
         if(!req.query.model){
             return cb(null, false, (req.rval = "model name is required"));
         }
-        cb(null, path.join(__dirname,"..", "client-img", req.query.model));
+        cb(null, path.join(__dirname,"..", "img", req.query.model));
     },
     filename: (req,file,cb) => {
         const id = nanoid(16);
@@ -38,6 +37,6 @@ const upload = multer({
 });
 router.get("/", getUploadHandler);
 router.post("/", upload.single("predict-img"), addImgUploadHandler);
-router.delete("/", deleteImgUploadHandler);
+
 
 module.exports = router;

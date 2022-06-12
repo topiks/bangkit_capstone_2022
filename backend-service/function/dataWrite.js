@@ -1,16 +1,16 @@
 const fs = require("fs");
 
-const readFileUtil = (filepath) => {
+const readImageUtil = (filepath) => {
     try {
         const jsonString = fs.readFileSync(filepath, "utf8");
         const parsedJson = JSON.parse(jsonString);
         if (!parsedJson) {
             const object = {};
-            writeFileUtil(object, filepath);
-            // console.log ('new JSON Initialized);
+            writeImageUtil(object, filepath);
+            
         }
         console.log("read success");
-        // console.log(parsedjson);
+        
         return parsedJson;
     } catch (err){
         console.log(err);
@@ -18,7 +18,7 @@ const readFileUtil = (filepath) => {
     }
 };
 
-const writeFileUtil = (arr, filepath) =>{
+const writeImageUtil = (arr, filepath) =>{
     try {
         const jsonString = JSON.stringify(arr);
         fs.writeFileSync(filepath, jsonString);
@@ -31,4 +31,4 @@ const writeFileUtil = (arr, filepath) =>{
     }
 };
 
-module.exports = { readFileUtil, writeFileUtil };
+module.exports = { readImageUtil, writeImageUtil };

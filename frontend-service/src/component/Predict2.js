@@ -13,7 +13,6 @@ class Predict2 extends Component {
         model:'',
         disease: '',
         prediction: '',
-        url: '',
         previewimg:'',
     }
     this.onFormSubmit = this.onFormSubmit.bind(this)
@@ -23,14 +22,13 @@ class Predict2 extends Component {
   }
 
   onFormSubmit(e){
-    e.preventDefault() // Stop form submit
+    e.preventDefault() 
     this.fileUpload(this.state.file).then((response)=>{
       console.log(response.data);
       this.setState({
           status: response.data.status,
           model: response.data.model,
           disease: response.data.disease,
-          url: response.data.url,
           prediction: response.data.prediction,
       })
     })
@@ -50,7 +48,7 @@ class Predict2 extends Component {
   
 
   fileUpload(file){
-    const url = 'https://backend-richest.et.r.appspot.com/upload?model=rice';
+    const url = 'https://backend-service-7zbu6hzb4a-et.a.run.app/upload?model=rice';
     const formData = new FormData();
     formData.append('predict-img',file)
     const config = {
@@ -91,10 +89,8 @@ class Predict2 extends Component {
                                         <Card.Body>
                                             <Card.Text>
                                             <h4>Prediction Success</h4>
-                                            <a href={this.state.url}>
                                             <div >{this.state.prediction + '%'}</div>
                                             <h5>{this.state.disease}</h5>
-                                            </a>
                                             </Card.Text>
                                         </Card.Body>
                                 </Card>
