@@ -28,10 +28,10 @@ class CaptureActivity : AppCompatActivity() {
 //    private val mModelPath = "mobilenet_v1_1.0_224_quant.tflite"
 //    private val mLabelPath = "labels_mobilenet_quant_v1_224.txt"
 
-    private val mModelPath = "converted_model.tflite"
-    private val mLabelPath = "label.txt"
-
-    private lateinit var classifier: Classifier
+//    private val mModelPath = "converted_model.tflite"
+//    private val mLabelPath = "label.txt"
+//
+//    private lateinit var classifier: Classifier
     private lateinit var myClass: ClassifyV3
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -94,7 +94,7 @@ class CaptureActivity : AppCompatActivity() {
     }
 
     private fun initClassifier() {
-        classifier = Classifier(assets, mModelPath, mLabelPath, mInputSize)
+//        classifier = Classifier(assets, mModelPath, mLabelPath, mInputSize)
         myClass = ClassifyV3(this)
     }
 

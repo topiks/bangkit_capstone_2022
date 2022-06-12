@@ -26,10 +26,6 @@ class ClassifyV3(context: Context) {
 //        this.context = context
 //    }
 
-    fun testting() {
-        Log.d("test", "mashokbro")
-    }
-
     fun classify(image: Bitmap) {
         try {
             val model: RichestV2 = RichestV2.newInstance(this.context)

@@ -21,6 +21,7 @@ class listDataAdapter(private val thingsToDo: ArrayList<ThingsToDo>): RecyclerVi
         holder.imPhoto.setImageResource(im_photo)
         holder.tvDay.text = day
         holder.tvValue.text = value
+
     }
 
     override fun getItemCount(): Int = thingsToDo.size

@@ -3,27 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/drawable-v24/shape_green_young_2_btn.xml" value="0.2555" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/drawable-v24/shape_green_young_btn.xml" value="0.179" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/drawable/shape_abu_btn.xml" value="0.121" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/drawable/shape_green_btn.xml" value="0.121" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/activity_capture.xml" value="0.264" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/activity_capture_java.xml" value="0.16" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/activity_halaman_utama.xml" value="0.264" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/activity_hasil.xml" value="0.264" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/activity_on_boarding.xml" value="0.22826086956521738" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/activity_pilih_sawah.xml" value="0.264" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/activity_pilih_sawah_java.xml" value="0.152" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/activity_pilih_sawah_v2.xml" value="0.16614583333333333" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/activity_report.xml" value="0.264" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/activity_sign_in.xml" value="0.4" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/activity_splash.xml" value="0.22826086956521738" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/activity_tambah_sawah.xml" value="0.4" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/layout/list_sawah_layout.xml" value="0.4" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/menu/popup_logout.xml" value="0.1703125" />
-        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/android/app/src/main/res/xml/file_paths.xml" value="0.10989583333333333" />
+        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/bangkit_capstone_2022-md (2)/bangkit_capstone_2022-md/android/app/src/main/res/layout/activity_halaman_utama.xml" value="0.4" />
+        <entry key="..\:/Kampus/Semester 6/Bangkit/Mulai/Capstone/bangkit_capstone_2022-md (2)/bangkit_capstone_2022-md/android/app/src/main/res/layout/activity_report.xml" value="0.18385416666666668" />
       </map>
     </option>
   </component>

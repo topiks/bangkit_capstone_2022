@@ -5,6 +5,8 @@
     android:id="@+id/halaman_utama"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
     tools:context=".main.HalamanUtamaActivity">
 
     <TextView
@@ -15,7 +17,7 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/montserrat"
         android:text="TextView"
-        android:textSize="16sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,9 +34,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
@@ -42,8 +44,7 @@
             android:id="@+id/calendar_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="180dp"
-            />
+            android:layout_marginTop="180dp" />
 
     </LinearLayout>
 
@@ -52,24 +53,39 @@
         android:layout_width="149dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/tombol_report"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
         android:id="@+id/btn_list"
         android:layout_width="149dp"
         android:layout_height="40dp"
         android:layout_marginStart="240dp"
-        android:layout_marginBottom="150dp"
-        android:text="List"
-        android:fontFamily="@font/montserrat"
-        android:textSize="16dp"
-        android:gravity="center"
-        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
         android:background="@drawable/shape_green_young_2_btn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="List"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/persenan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/card_cal_back"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Keberhasilan panen : 99 %"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_list" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

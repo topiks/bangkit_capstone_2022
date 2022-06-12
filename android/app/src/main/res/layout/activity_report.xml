@@ -51,7 +51,7 @@
                 app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/editMasalah"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -72,12 +72,14 @@
                 android:translationX="100dp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/editHariMasalah"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:scaleType="centerInside"
+                android:text="hh-mm-yy"
+                android:textColor="@color/abu_1"
                 android:layout_gravity="center" />
 
             <TextView
@@ -92,7 +94,7 @@
                 android:translationX="100dp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName3"
+                android:id="@+id/editLevelMasalah"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -113,7 +115,7 @@
                 android:layout_gravity="center" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_submit_report"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

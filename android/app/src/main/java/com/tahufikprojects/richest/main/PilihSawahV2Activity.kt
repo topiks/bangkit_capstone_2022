@@ -12,12 +12,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.*
 import com.tahufikprojects.richest.R
+import com.tahufikprojects.richest.account.SignInActivity
 import com.tahufikprojects.richest.opening.OnBoardingActivity
 import com.tahufikprojects.richest.utils.Preferences
 
 class PilihSawahV2Activity : AppCompatActivity() {
 
-    var preferences: Preferences? = null
+    lateinit var preferences: Preferences
 
     lateinit var recyclerView: RecyclerView
     var databaseReference: DatabaseReference? = null
@@ -29,6 +30,8 @@ class PilihSawahV2Activity : AppCompatActivity() {
     lateinit var nama_user: TextView
     lateinit var jumlah_data:TextView
 
+
+
     var jumlahDataSawah = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,7 +41,7 @@ class PilihSawahV2Activity : AppCompatActivity() {
         preferences = Preferences(this)
         recyclerView = findViewById(R.id.coba_list)
         databaseReference = FirebaseDatabase.getInstance().getReference("Sawah")
-            .child(preferences!!.getValues("username")!!)
+            .child(preferences.getValues("username")!!)
         recyclerView.setHasFixedSize(true)
         recyclerView.setLayoutManager(LinearLayoutManager(this))
 
@@ -51,11 +54,11 @@ class PilihSawahV2Activity : AppCompatActivity() {
         nama_user = findViewById(R.id.name_user_general)
         jumlah_data = findViewById(R.id.belum_ada_data)
 
-        if (preferences!!.getValues("username") == "") {
+        if (preferences.getValues("username") == "") {
             finishAffinity()
             val intent = Intent(this, OnBoardingActivity::class.java)
             startActivity(intent)
-        } else nama_user.setText(preferences!!.getValues("nama"))
+        } else nama_user.setText(preferences.getValues("nama"))
 
         tambah_data = findViewById(R.id.fab_btn_tambah)
         tambah_data.setOnClickListener(View.OnClickListener {
@@ -73,14 +76,17 @@ class PilihSawahV2Activity : AppCompatActivity() {
             popupMenu.setOnMenuItemClickListener(PopupMenu.OnMenuItemClickListener { menuItem ->
                 when (menuItem.itemId) {
                     R.id.menu_logout -> {
-                        preferences!!.setValues("onboarding", "")
-                        preferences!!.setValues("status", "")
-                        preferences!!.setValues("nama", "")
-                        preferences!!.setValues("email", "")
-                        preferences!!.setValues("username", "")
-                        preferences!!.setValues("nama_sawah_sekarang", "")
+                        preferences.setValues("onboarding", "0")
+                        preferences.setValues("status", "0")
+                        preferences.setValues("nama", "")
+                        preferences.setValues("email", "")
+                        preferences.setValues("username", "")
+                        preferences.setValues("nama_sawah_sekarang", "")
                         finishAffinity()
-                        return@OnMenuItemClickListener true
+
+                        var goHome = Intent(this@PilihSawahV2Activity, SignInActivity::class.java)
+                        startActivity(goHome)
+//                        return@OnMenuItemClickListener true
                     }
                 }
                 false
