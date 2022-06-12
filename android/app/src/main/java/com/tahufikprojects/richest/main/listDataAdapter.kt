@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.tahufikprojects.richest.R
 
-class listDataAdapter(private val List_Data: ArrayList<list_data>): RecyclerView.Adapter<listDataAdapter.ListViewHolder>() {
+class listDataAdapter(private val thingsToDo: ArrayList<ThingsToDo>): RecyclerView.Adapter<listDataAdapter.ListViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row,parent, false)
@@ -17,13 +17,13 @@ class listDataAdapter(private val List_Data: ArrayList<list_data>): RecyclerView
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (day, value, im_photo) = List_Data[position]
+        val (day, value, im_photo) = thingsToDo[position]
         holder.imPhoto.setImageResource(im_photo)
         holder.tvDay.text = day
         holder.tvValue.text = value
     }
 
-    override fun getItemCount(): Int = List_Data.size
+    override fun getItemCount(): Int = thingsToDo.size
 
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var imPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
